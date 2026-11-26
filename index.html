@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO On-Page -->
+    <title>DualDev Academy | Aprenda Programação Online na Prática</title>
+    <meta
+      name="description"
+      content="Aprenda Java, Python, JavaScript, HTML5 e CSS3 direto no navegador com 100 desafios práticos, editor inteligente e visualização ao vivo. Acesse grátis agora."
+    />
+    <meta
+      name="keywords"
+      content="aprender programação online, academia de programação, python no navegador, java interativo, javascript playground, html e css ao vivo, dualdev"
+    />
+    <meta name="author" content="Equipe DualDev" />
+    <link rel="canonical" href="https://pontooi.github.io/DualDev/" />
+
+    <!-- Open Graph / Compartilhamento -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DualDev Academy | Aprenda Programação Online na Prática" />
+    <meta
+      property="og:description"
+      content="Pratique Java, Python, JavaScript, HTML5 e CSS3 no navegador sem instalar nada. 100 exercícios interativos e Playground ao vivo."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/app-icon-192.svg" />
+
+    <!-- Dados Estruturados (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "DualDev Academy",
+        "description": "Plataforma educacional interativa para aprender programação na prática diretamente pelo navegador.",
+        "url": "https://pontooi.github.io/DualDev/"
+      }
+    </script>
+
+    <script>
+      // Garante a barra final na URL do repositório no GitHub Pages para que assets relativos nunca dêem 404
+      if (window.location.pathname.split('/').pop().indexOf('.') === -1 && !window.location.pathname.endsWith('/')) {
+        window.location.replace(window.location.pathname + '/' + window.location.search + window.location.hash);
+      }
+    </script>
+  </head>
+  <body class="min-h-screen bg-[#0b101b] text-slate-100 selection:bg-[#ffbe82]/30 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
